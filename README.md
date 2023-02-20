@@ -38,4 +38,7 @@ To join a **Conduit Live** session, you can visit `127.0.0.1/live/` to join a Co
 
 To access the **Conduit Quiz Editor**, you can either go to the dashboard and click the `New Quiz` button, or you can visit `127.0.0.1/editor/` - remember you don't need an account to edit, host or play. You only need an account to share your quizzes and save them to the server you're hosting Conduit on.
 
-To host a game via the **Conduit Live Console**, click the `Conduit Live` button
+To host a game via the **Conduit Live Console**, click the `Conduit Live` button in the editor, or right-click one of your quizzes and choose `Play with Conduit Live`
+
+## The Conduit API Endpoints
+All the endpoints are located under the `127.0.0.1/api/` sub-folder. They also all allow cross-origin connections.
