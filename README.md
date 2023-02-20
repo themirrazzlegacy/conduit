@@ -28,4 +28,14 @@ Change `ssl_private_key` and `ssl_public_key` to a file path if you want to use 
 
 ## Accessing Conduit
 For testing, you'll visit `127.0.0.1` or `localhost`. In some cases, you can visit `localho.st` (depending on your /etc/hosts file and DNS server).
-We're using `127.0.0.1` in the examples.
+We're using `127.0.0.1` in the examples, but feel free to choose whichever one you prefer.
+
+> Free tip: you can give yourself a custom domain if you edit the `/etc/hosts` file. On Linux and MacOS, it's in... `/etc/hosts`. On Windows, its prob in some folder under `system32`
+
+To access the **Conduit Dashboard**, you can visit `127.0.0.1/dashboard/`. The dashboard lets you manage all of your quizzes and your account. Note to use Conduit, it doesn't require an account to host a session!
+
+To join a **Conduit Live** session, you can visit `127.0.0.1/live/` to join a Conduit Live session.
+
+To access the **Conduit Quiz Editor**, you can either go to the dashboard and click the `New Quiz` button, or you can visit `127.0.0.1/editor/` - remember you don't need an account to edit, host or play. You only need an account to share your quizzes and save them to the server you're hosting Conduit on.
+
+To host a game via the **Conduit Live Console**, click the `Conduit Live` button
