@@ -56,6 +56,7 @@ To start a brand-new, shiny Conduit Live session, you make a `POST` request to `
    "multi_step_join": false
 }
 ```
+> If you want to know more about the `GameData` type, then you can check out the [Conduit Quiz File Format](#conduit-quiz-file-format) section.
 
 You'll then recieve a response like this:
 ```json
@@ -63,6 +64,7 @@ You'll then recieve a response like this:
    "id": "abcdef12-abcd-abcd-abcd-abcdef123467",
    "pin": "Q8EX NM3"
 }
+```
 
 To stop the game, just send a request to `127.0.0.1/api/live/quit`:
 ```json
