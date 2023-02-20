@@ -41,4 +41,35 @@ To access the **Conduit Quiz Editor**, you can either go to the dashboard and cl
 To host a game via the **Conduit Live Console**, click the `Conduit Live` button in the editor, or right-click one of your quizzes and choose `Play with Conduit Live`
 
 ## The Conduit API Endpoints
-All the endpoints are located under the `127.0.0.1/api/` sub-folder. They also all allow cross-origin connections.
+All the endpoints are located under the `127.0.0.1/api/` sub-folder. They also all allow cross-origin connections. API responses and request bodies will ALWAYS be in JSON!
+
+### Conduit Live
+Conduit Live is the heart of Conduit - giving students and teachers a Kahoot-like experience. Here we document all the APIs used for Conduit Live.
+
+### Starting a Conduit Live session
+To start a brand-new, shiny Conduit Live session, you make a `POST` request to `127.0.0.1/api/live/start` with the following body:
+```json
+{
+   "game": GameData,
+   "username": "your_username_or_null",
+   "player_avatars": true,
+   "multi_step_join": false
+}
+```
+
+You'll then recieve a response like this:
+```json
+{
+   "id": "abcdef12-abcd-abcd-abcd-abcdef123467",
+   "pin": "Q8EX NM3"
+}
+
+To stop the game, just send a request to `127.0.0.1/api/live/quit`:
+```json
+{
+   "id": "abcdef12-abcd-abcd-abcd-abcdef123467",
+   "pin": "Q8EX NM3"
+}
+```
+
+> Fun fact: only the game pin is shown publicly; the session ID is used as verification to prevent people from hijacking the game.
